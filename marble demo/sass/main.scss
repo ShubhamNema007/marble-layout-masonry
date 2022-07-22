@@ -1,0 +1,50 @@
+@import "mixins";
+@import "variables";
+@import "marble-section";
+@import"button";
+
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('./../font/TiemposHeadline-Semibold.eot');
+  src: url('./../font/TiemposHeadline-Semibold.eot?#iefix') format('embedded-opentype'),
+      url('./../font/TiemposHeadline-Semibold.woff2') format('woff2'),
+      url('./../font/TiemposHeadline-Semibold.woff') format('woff'),
+      url('./../font/TiemposHeadline-Semibold.ttf') format('truetype'),
+      url('./../font/TiemposHeadline-Semibold.svg#TiemposHeadline-Semibold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+  margin: 0 auto;
+  @media (min-width: 300px)and (max-width:768px){
+    max-width: 350px;
+  }
+  @media (min-width: 768px)and (max-width:990px){
+    max-width: 775px;
+  }
+  @media (min-width: 990px)and(max-width:1100px){
+    max-width: 945px;
+  }
+  @media (min-width: 1100px)and(max-width:1300px){
+    max-width: 1300px; 
+  }  
+}
+.owl-carousel.owl-theme.owl-loaded.owl-drag {
+  max-width: 924px;
+}
+.grid{
+  margin: 0 0 0 85px;
+  @include sm{
+    margin: 0;
+  }
+  @include tab{
+    margin: 0;
+  }
+}

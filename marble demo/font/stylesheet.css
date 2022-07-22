@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Tiempos Headline';
+    src: url('TiemposHeadline-Semibold.eot');
+    src: url('TiemposHeadline-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('TiemposHeadline-Semibold.woff2') format('woff2'),
+        url('TiemposHeadline-Semibold.woff') format('woff'),
+        url('TiemposHeadline-Semibold.ttf') format('truetype'),
+        url('TiemposHeadline-Semibold.svg#TiemposHeadline-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+

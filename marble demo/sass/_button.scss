@@ -1,0 +1,192 @@
+div#myDIV {
+    background: #02022B;
+    box-shadow: 0px 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 20px;
+    max-width: 352px;
+    position: absolute;
+    top: 0;
+    left: 65px;
+    @include sm{
+        top: 45px;
+        left: 25px;
+    }
+}
+.Button {
+    position: relative;
+    z-index: 2;
+    top: 8px;
+    display: flex;
+    align-items: center;
+    background-color: none;
+    @include sm{
+        right: 55px;
+    }
+    @include tab{
+        top: 5px;
+    }
+    .function-btn{
+        border: none;
+        background: transparent;
+    }
+    .item-btn{
+        max-width: 56px;
+    }
+}
+.dot{
+    border-radius: 50%;
+    width: 12px;
+    display: inline-block;
+    height: 12px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 16px rgb(0 0 0 / 10%);
+    margin-right: 9px;
+    @include sm{
+        display: none;
+    }
+    @include tab{
+        display: none;
+    }
+  }
+.Curate-your-feed {
+   @include outfit-font;
+    font-weight: $font-weight-outfit-700;
+    font-size: 24px;
+    line-height: 133%;
+    display: flex;
+    align-items: center;
+    color: #FAFAFA;
+}
+.feed-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.feed-search {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    @include outfit-font;
+    font-weight: $font-weight-outfit-400;
+    font-size: 14px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    color: #CFD2E0;
+    margin-top: 24px;
+    padding: 9px 84px 8px 44px;
+    border: none;
+}
+.feed-btn {
+    display: flex;
+    margin-top: 21px;
+}
+.feed-following {
+    @include outfit-font;
+    font-weight: $font-weight-outfit-600;
+    font-size: 14px;
+    line-height: 133%;
+    display: flex;
+    align-items: center;
+    color: $white-color;
+    padding: 6px 12px;
+    border-radius: 6px 0px 0px 6px;
+    border: none;
+    background: $orange-color;
+    cursor: pointer;
+}
+.feed-all {
+    @include outfit-font;
+    font-weight: $font-weight-outfit-500;
+    font-size: 14px;
+    line-height: 133%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #CFD2E0;
+    padding: 4px 34px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+.feed-p {
+   @include outfit-font;
+    font-weight: $font-weight-outfit-600;
+    font-size: 20px;
+    line-height: 133%;
+    display: flex;
+    align-items: center;
+    color: #FAFAFA;
+    margin-top: 24px;
+}
+.feeds-btn {
+    display: flex;
+    column-gap: 12px;
+}
+button.feed-one-btn {
+   @include outfit-font;
+    font-weight: $font-weight-outfit-600;
+    font-size: 14px;
+    line-height: 133%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #02022B;
+    padding: 24px 7px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.dropdown {
+    display: flex;
+    row-gap: 16px;
+    flex-direction: column;
+    margin-top: 24px;
+}
+.dropdown-list-items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.industry {
+   @include outfit-font;
+    font-weight: $font-weight-outfit-600;
+    font-size: 20px;
+    line-height: 133%;
+    display: flex;
+    align-items: center;
+    color: #FAFAFA;
+}
+p.dropdown-para {
+ @include outfit-font;
+    font-weight: $font-weight-outfit-400;
+    font-size: 14px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+.dropdown-content {
+    display: flex;
+    column-gap: 36px;
+}
+a {
+    text-decoration: none;
+  @include outfit-font;
+    font-weight: $font-weight-outfit-400;
+    font-size: 16px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    color: #CFD2E0;
+}
+.flex-box-feed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}

@@ -1,0 +1,796 @@
+.marble-header{
+    background-color: #f1f1f1;
+    .marble{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 40px;
+    }
+    .marble-search-bar{
+        padding: 14px 0;
+        .marble-bar-font{
+            font-size: 16px;
+            line-height: 24px;
+            @include outfit-font;
+            font-family: $font-weight-outfit-700;
+            color: $ligth-grey;
+            padding: 12px 74px 12px 52px;
+            background: $white-color;
+            border: 1px solid #CFD2E0;
+            border-radius: 48px;
+            @include sm{
+                display: none;
+            }
+        }
+        .fa-solid{
+            position: relative;
+            left: 35px;
+        }
+    }
+    .marble-icons{
+        display: flex;
+        column-gap: 24px;
+        align-items: center;
+    }
+}
+.marble-gradient{
+    background-image: url(/image/Banner\ Background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    .avatar{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        .avatar-img-css{
+            max-height: 210px;
+            @include sm{
+                display: none;
+            }
+            @include tab{
+                display: none;
+            }
+            @include lg{
+                display: none;
+            }
+        }
+        .avatar-content{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            @include sm{
+                margin:45px 0;
+            }
+            @include tab{
+                margin:45px 0;
+            }
+            .avatar-span{
+                @include outfit-font;
+                font-weight: $font-weight-outfit-700;
+                font-size: 14px;
+                line-height: 24px;
+                text-align: center;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: $orange-color;
+            }
+            .avatar-para{
+                font-family: Tiempos Headline Test;
+                font-size: 48px;
+                line-height: 133%;
+                text-align: center;
+                color: #F4F4F4;
+                max-width: 414px;
+            }
+        }
+    }  
+}
+.explore-section{
+    background-color: #f5f5f5;
+    .marble-main-css{
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+    }
+.explore-your-feed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    .explore-head{
+        @include outfit-font;
+        font-weight: $font-weight-outfit-700;
+        font-size: 32px;
+        line-height: 133%;
+        text-align: center;
+        color: $dark-blue;
+        @include sm{
+            font-size: 20px;
+        }
+    }
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    @include sm{
+        max-width: 155px;
+    }
+    .item-list{
+    display: flex;
+    column-gap: 16px;
+    background: $white-color;
+    border-radius: 50px;
+    align-items: center; 
+    padding: 12px 32px;  
+    @include sm{
+        display: none;
+    } 
+    @include tab{
+        column-gap: 10px;
+      max-width: 712px;
+    }
+    @include lg{
+        max-width: 745px;
+    }
+    
+    }
+    .following{
+        @include item-list;
+        display: flex;
+        align-items: center;
+        color: $dark-blue;
+        text-decoration: none;
+    }
+        .item-btn-icon {
+            position: relative;
+            left: 35px;
+            top: 10px;
+            border-radius: 50%;
+            background: $orange-color;
+            padding: 7px 6px;
+        }
+        .btn-frame{
+            display: flex;
+        }
+        .Libraries{
+            @include item-list;
+            color: $white-color;
+            background: $dark-blue;
+            cursor: pointer;
+        }
+        .Collections{
+            @include item-list;
+            color: $white-color;
+            background: $dark-blue;
+            cursor: pointer;
+        }
+        .Luminaries{
+            @include item-list;
+            color: $ligth-grey;
+            border: none;
+            cursor: pointer;
+        }
+    .Search-feed{
+        padding: 12px 118px 12px 52px;
+        background: #F4F4F4;
+        border-radius: 48px;
+        border: none;
+        @include outfit-font;
+        font-weight: $font-weight-outfit-400;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: $ligth-grey;
+        margin-left: 204px;
+        max-width: 256px;
+    }
+}
+.carousel-main{
+    display: flex;
+    justify-content: center;
+    column-gap: 32px;
+}
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    padding: 19px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    max-width: 168px;
+    row-gap: 44px;
+    @include sm{
+        display: none;
+    }
+    @include tab{
+        display: none;
+    }
+    @include lg{
+        display: none;
+    }
+    .marbles {
+        @include outfit-font;
+        font-weight: $font-weight-outfit-500;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $orange-color;
+        @include sm{
+            font-size: 10px;
+        }
+        @include tab{
+            font-size: 10px;
+        }
+    }
+    .Follow {
+        @include outfit-font;
+        font-weight: $font-weight-outfit-700;
+        font-size: 24px;
+        line-height: 120%;
+        color: $dark-blue;
+        @include sm{
+            font-size: 16px;
+        }
+        @include tab{
+            font-size: 16px;
+        }
+    }
+    .View-all-Marbles {
+        @include outfit-font;
+        font-weight: $font-weight-outfit-600;
+        font-size: 14px;
+        line-height: 133%;
+        text-decoration-line: underline;
+        color: $orange-color;
+        @include sm{
+            font-size: 10px;
+        }
+        @include tab{
+            font-size: 10px;
+        }
+    }
+}
+// .swiper-main-img{
+//   @include sm{
+//     display: none;
+//   }
+
+// }
+.slider-img{
+    max-width: 40px;
+    position: absolute;
+    top: 95px;
+    left: 65px;
+    @include sm{
+        display: none;
+        max-width: 25px;
+    top: 67px;
+    left: 45px;
+    }
+    @include tab{
+        max-width: 20px;
+        position: absolute;
+        top: 72px;
+        left: 48px;
+    }
+}
+.swiper-hero {
+    position: absolute;
+    left: 12px;
+    bottom: 35px;
+    max-width: 40px;
+    border-radius: 50%;
+    border: 2px solid $white-color;
+    filter: drop-shadow(0px 4.15385px 12.4615px rgba(124, 11, 79, 0.15));
+    @include sm{
+        left: 10px;
+        bottom: 25px;
+        max-width: 30px;
+    }
+    @include tab{
+        max-width: 25px;
+        bottom: 30px;
+        left: 15px;
+    }
+}
+.swiper-name {
+   @include outfit-font;
+   font-weight: $font-weight-outfit-700;
+    font-size: 14px;
+    line-height: 133%;
+    display: flex;
+    align-items: center;
+    color: $white-color;
+    position: absolute;
+    bottom: 12px;
+    left: 15px;
+    @include sm{
+        color: #02022B;
+        bottom: 5px;
+    left: 10px;
+    }
+    @include tab{
+        font-size: 12px;
+    }
+}
+    .card-one-css{
+        @include card-borders;
+        max-width: 736px;
+        margin-top:32px;
+       
+        @include sm{
+            max-width: 352px;
+        }
+    }
+    .card-details{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        column-gap: 8px;
+    }
+    .card-one-image{
+        @include sm{
+            max-width: 300px;
+        }
+    }
+    .Ariana-Huffington{
+        @include outfit-font;
+        font-weight: $font-weight-outfit-700;
+        font-size: 24px;
+        line-height: 133%;
+        color: $dark-blue;
+        @include sm{
+            font-size: 16px;
+        }
+    }
+    .follow{
+        @include outfit-font;
+        font-weight: $font-weight-outfit-600;
+        font-size: 12px;
+        line-height: 160%;
+        text-align: center;
+        color: $dark-blue;
+        border: 1px solid $dark-blue;
+        border-radius: 13px;
+        padding: 2px 12px;
+        text-decoration: none;
+        @include sm{
+            font-size: 8px;  
+        }
+    }
+    .part-of-a-panel{
+        @include outfit-font;
+        font-weight: $font-weight-outfit-500;
+        font-size: 16px;
+        line-height: 133%;  
+        color: $orange-color;
+        @include sm{
+            font-size: 14px;
+        }
+    }
+    .Featured-css {
+        display: flex;
+        column-gap: 24px;
+        align-items: center;
+        margin-left: 211px;
+        @include sm{
+            margin-left: 0;
+        }
+    }
+    .Featured{
+        @include outfit-font;
+        font-weight: $font-weight-outfit-600;
+        font-size: 12px;
+        line-height: 133%;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $white-color;
+        background: linear-gradient(48.91deg, #FFAA47 0%, #F6B28D 20.99%, #FF6090 72.54%, #F27059 98.94%);
+        border-radius: 4px;
+        padding: 4px 12px;
+        @include sm{
+            font-size: 8px;
+            padding: 2px 5px;
+        }
+    }
+    .card-hero-image{
+        padding: 16px 20px;
+    }
+    .card-p{
+        @include outfit-font;
+        font-weight: $font-weight-outfit-600;
+        font-size: 24px;
+        line-height: 160%;
+        color: $dark-blue;
+        margin: 0 0 16px 17px;
+    }
+    .card-vogue{
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 0;
+        .Vogue{
+            @include outfit-font;
+            font-weight: $font-weight-outfit-600;
+            font-size: 13px;
+            line-height: 160%;
+            color: $dark-blue;
+            background: #F7F5F2;
+            border-radius: 40px;
+            padding: 5px 8px 5px 38px
+        }
+        .vogue-icon-css {
+            display: flex;
+            column-gap: 16px;
+            .vogue-icon{
+                padding: 8px;
+            }
+        }
+    }
+     .Ariana-Huffington-commented{
+           @include outfit-font;
+           font-weight: $font-weight-outfit-700;
+            font-size: 14px;
+            line-height: 133%;
+            color: $dark-blue;
+            .commented-css{
+                color: $orange-color;
+            }
+        }
+    .card-border{
+        border: 1px solid #E7E7E7;
+        transform: rotate(180deg);
+    }  
+    .card-comment{
+       @include outfit-font;
+       font-weight: $font-weight-outfit-600;
+        font-size: 14px;
+        line-height: 160%;
+        color: #323F55;
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .start-logo {
+        display: flex;
+        column-gap: 12px;
+    }
+    .inspired-logo{
+        display: flex;
+        column-gap: 4px;
+        align-items: center;
+    }
+    .inspired-logo-numbers{
+        @include outfit-font;
+        font-weight: $font-weight-outfit-600;
+        font-size: 10px;
+        line-height: 160%;
+        text-align: center;
+        color: $ligth-grey;
+    }
+    .card-two-css{
+        max-width: 352px;
+        margin-top:32px;
+        @include card-borders;
+    } 
+    .card-details-small{
+        display: flex;
+        column-gap: 12px;
+        align-items: center;
+    }
+    .Ariana-Huffington-small{
+        @include outfit-font;
+        font-weight:$font-weight-outfit-700;
+        font-size: 16px;
+        line-height: 133%;
+        color: $dark-blue;
+    }
+    .published-small{
+        @include outfit-font;
+        font-weight: $font-weight-outfit-500;
+        font-size: 14px;
+        line-height: 160%;
+        color: $orange-color;
+    }
+    .card-p-small{
+        @include outfit-font;
+        font-weight: $font-weight-outfit-500;
+        font-size: 16px;
+        line-height: 133%;
+        color: $dark-blue;
+        margin-top: 16px;
+    }
+    .Amazon-small-css{
+        margin: 16px 0;
+        .Amazon-small{
+            @include outfit-font;
+            font-weight: $font-weight-outfit-500;
+            font-size: 13px;
+            line-height: 160%;
+            color: $dark-blue;
+            background: #F7F5F2;
+            border-radius: 40px;
+            padding: 5px 8px 5px 36px;
+        }
+    }
+    .card-suggestion{
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        margin-top: 16px;
+   
+    .card-suggestion-image{
+        max-width: 40px;
+    }
+    .Ariana-commented-small{
+      @include outfit-font;
+        font-weight: $font-weight-outfit-700;
+        font-size: 14px;
+        line-height: 133%;
+        color: $dark-blue;
+        .commented{
+            color: $orange-color;
+        }
+    }
+    }
+    .card-border-small{
+        border: 1px solid #E7E7E7;
+        transform: rotate(180deg);
+    }
+    .card-small-border{
+        border-left: 2px solid $orange-color;
+        max-height: 128px;
+    }
+    .card-small-para{
+        font-family: 'Tiempos Headline';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 133%;
+        color: $dark-blue;
+        max-width: 283px;
+       margin: 0 0 18px 17px;     
+    }
+    .card-comment-small{
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+        align-items: center;
+        .start-logo{
+            display: flex;
+            column-gap: 10px
+        }
+        .inspired-small{
+            @include outfit-font;
+            font-weight: $font-weight-outfit-600;
+            font-size: 14px;
+            line-height: 160%;
+            color: #323F55; 
+        }
+        .inspired-logo{
+            display: flex;
+            column-gap: 4px;
+            align-items: center;
+        }
+    }
+
+.card-four-css{
+    @include card-borders;
+    max-width: 352px;
+    margin-top:32px;
+}
+.card-five-css{
+    display: flex;
+    flex-direction: column;
+    margin-top:32px;
+    @include card-borders;
+    width: 352px;
+}
+    .card-content-small {
+        display: flex;
+        column-gap: 16px;
+        margin-top: 16px;
+    }
+    .the-box {
+       @include outfit-font;
+        font-weight: $font-weight-outfit-700;
+        font-size: 14px;
+        line-height: 133%;
+        color: $dark-blue;
+    }
+    .Please-excuse-me {
+        @include outfit-font;
+        font-weight: $font-weight-outfit-500;
+        font-size: 12px;
+        line-height: 133%;
+        color: $ligth-grey;
+    }
+
+.card-three{
+    @include display-flex-card;
+    @include sm{
+        flex-direction: column;
+        row-gap: 32px;
+    }
+    @include tab{
+        row-gap: 32px;
+    }
+}
+    .card-six-css{
+        max-width: 352px;
+        margin-top:32px;
+        @include card-borders;
+    }
+    .card-seven-css {
+        background: $white-color;
+        box-shadow: 0px 36px 48px -32px rgb(0 0 0 / 30%);
+        border-radius: 20px;
+        max-width: 352px;
+        margin-top:32px;
+    }   
+    .card-badge{
+            position: absolute;
+            top: 60px;
+            left: 285px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 0px 12px;
+            @include sm{
+                position: absolute;
+            }
+    }
+    .card-badge-name{
+            position: absolute;
+            top: 360px;
+            left: 35px;
+            display: flex;
+            flex-direction: column;
+            @include sm{
+                position: absolute;
+            }
+        }
+        .new{
+            padding: 1px 11px;
+            @include outfit-font;
+            font-weight: $font-weight-outfit-600;
+            font-size: 13px;
+            line-height: 160%;
+            text-align: center;
+            color: $dark-blue;
+        }
+        .Artist {
+            @include outfit-font;
+            font-weight: $font-weight-outfit-500;
+            font-size: 16px;
+            line-height: 133%;
+            color: $orange-color;
+        }
+        .Artist-name {
+            @include outfit-font;
+            font-weight: $font-weight-outfit-500;
+            font-size: 24px;
+            line-height: 133%;
+            color: #F7F5F2;
+        }
+        .card-follow{
+            position: absolute;
+            top: 425px;
+            left: 35px;
+            @include sm{
+                position: absolute;
+            }
+        }
+        .follow-btn{
+            @include outfit-font;
+            font-weight: $font-weight-outfit-500;
+            font-size: 14px;
+            line-height: 160%;
+            text-align: center;
+            color: #F7F5F2;
+            padding: 5px 14px;
+            border: 1px solid #F7F5F2;
+            border-radius: 17px;
+            background: transparent;
+            cursor: pointer;
+        }
+
+    .six-image-css{
+        padding: 16px;
+    }
+    .card-eigth-css{
+        max-width: 352px;
+        margin-top:32px;  
+       @include card-borders;
+    }
+
+    
+    .card-nine-css{
+        background: $white-color;
+        margin-top:32px;
+        box-shadow: 0px 36px 48px -32px rgb(0 0 0 / 30%);
+        border-radius: 20px;
+        padding: 20px 20px 12px;
+        max-width: 352px;
+        max-height: 589px;
+    }
+    .card-ten-css{
+        @include card-borders;
+        max-width: 352px;
+        margin-top:32px;
+    }
+    .card-content-small {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10px;
+    }
+    .card-eleven-css{
+        background: $white-color;
+        box-shadow: 0px 36px 48px -32px rgb(0 0 0 / 30%);
+        border-radius: 20px;
+        max-width: 352px;
+        margin-top:32px;
+    }
+    .card-twelve-css{
+        background: $white-color;
+        box-shadow: 0px 36px 48px -32px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        padding: 20px 20px 12px;
+        width: 352px;
+        margin-top: 32px
+    }
+    .twelve-follow-btn{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .card-thirteen-css{
+        @include card-borders;
+        max-width: 352px;
+        margin-top:32px;
+        @include tab{
+            position: relative;
+            bottom: 945px;
+        }
+    }
+    .card-fourteen-css{
+        @include card-borders;
+        max-width: 736px;
+        margin-top:32px;
+    }
+    .card-fouteen-image{
+        @include sm{
+            max-width: 300px;
+        }
+    }
+    .card-fifteen-css{
+        @include card-borders;
+        max-width: 352px;
+        margin-top:32px;
+    }
+    .card-sixteen-css{
+        @include card-borders;
+        max-width: 352px;
+        margin-top: 32px;
+ 
+    }
+    .card-seventeen-css{
+        @include card-borders;
+        max-width: 352px;
+        margin-top:32px;
+    
+        .seventeen-image{
+            border-radius: 12px;
+        }
+    }
+}
+
+
+
+
+
